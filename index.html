@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+	<title>Let's Travel</title>
+	<!-- Code by Nadia Rasul. Design provided by HackerYou -->
+</head>
+<body>
+	<header class="main-header">
+		<nav>
+			<div class="logo">
+				<h3>Let's <apan><img src="images/logo.png" alt="Let's Travel logo">	</apan>Travel</h3>
+			</div>
+
+			<div class="fa fa-bars fa-2x"></div>
+			<ul class="menu">
+				<li><a href="#"><h5>Home</h5></a></li>
+				<li><a href="#"><h5>Hotels</h5></a></div>
+					<li><a href="#"><h5>Flights</h5></a></li>
+					<li><a href="#"><h5>Cars</h5></a></li>
+					<li><a href="#"><h5>Cruises</h5></a></li>
+					<li>
+						<a href="#"><h5>Tour <i class="fa fa-chevron-down"></i></h5></a>
+						<ul class="tour-dropdown">
+							<li><a href="#"><h5>Package 1</h5></a></li>
+							<li><a href="#"><h5>Package 2</h5></a></li>
+						</ul>
+					</li>
+
+					<li><a href="#"><h5>Account <i class="fa fa-chevron-down"></i></h5></a>
+						<ul>
+							<li><a href="#"><h5>Support</h5></a></li>
+							<li><a href="#"><h5>FAQ</h5></a></li>
+						</ul>
+					</li>
+
+					<li><a href="#"><h5>Insurance</h5></a></li>
+
+					<li>
+						<a href="#"><h5>Manage Trips <i class="fa fa-chevron-down"></i></h5></a>
+						<ul class="booking-dropdown">
+							<li><a href="#"><h5>Itineraries</h5></a></li>
+							<li><a href="#"><h5>Online Check-in</h5></a></li>
+							<li><a href="#"><h5>Cancel Bookings</h5></a></li>
+						</ul>
+					</li>	
+				</ul>		
+			</nav>
+
+			<div class="hero-text">
+				<div id="weather"></div>
+				<h1>Amazing Italy</h1>
+				<h1>7 Day Tour</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At deserunt vitae quaerat, odio dolorem accusamus omnis velit impedit doloribus repudiandae!</p>
+				<button class="btn btn-primary"><i class="fa fa-map-marker"></i>View Our Tours</button>	
+			</div>
+
+			<div class="search-form">
+				<div class="search">
+					<input id="tab1" type="radio" name="tabs" checked>
+					<label for="tab1" data-selection="hotel-1"><h4 >Hotels</h4></label>
+					<input id="tab2" type="radio" name="tabs">
+					<label for="tab2"  data-selection="flights"><h4>Flights</h4></label>
+					<input id="tab3" type="radio" name="tabs">
+					<label for="tab3"  data-selection="cars"><h4>Cars</h4></label>
+					<input id="tab4" type="radio" name="tabs">
+					<label for="tab4"  data-selection="cruises"><h4>Cruises</h4></label>
+					<input id="tab5" type="radio" name="tabs">
+					<label for="tab5"  data-selection="activities"><h4>Activities</h4></label>	
+				</div>
+
+				<section id="section1" class="packages hotel-1">
+					<form class="package-form clearfix">
+						<div class="destination">
+							<label for="hotel-destination"><h5>Your Destination</h5></label>
+							<input id="hotel-destination" type="text" placeholder=" Enter a destination or hotel name">
+						</div>
+
+						<div>
+							<label for="hotel-checkin"><h5>Check In</h5></label>
+							<input id="hotel-checkin" type="date">
+						</div>
+
+						<div>
+							<label for="hotel-checkout"><h5>Check Out</h5></label>
+							<input id="hotel-checkout" type="date">
+						</div>
+
+						<div class="drops">
+							<div class="search-dropdown">
+								<label for="rooms"><h5>Rooms</h5></label>	
+								<div class="rooms">
+									<select id="rooms">
+										<option value="1">01</option>
+										<option value="2">02</option>
+										<option value="3">03</option>
+										<option value="4">04</option>
+										<option value="5">05</option>
+										<option value="6">6+</option>	
+									</select>
+								</div>
+							</div>
+
+							<div class="search-dropdown">
+								<label for="kids"><h5>Kids</h5></label>
+								<div class="kids">
+									<select id="kids">
+										<option value="1">01</option>
+										<option value="2">02</option>
+										<option value="3">03</option>
+										<option value="4">04</option>
+										<option value="5">05</option>
+										<option value="6">06</option>			  			  
+									</select>
+								</div>	
+							</div>
+
+							<div class="search-dropdown">
+								<label for="adults"><h5>Adults</h5></label>	
+								<div class="adults">	
+									<select id="adults">
+										<option value="1">01</option>
+										<option value="2">02</option>
+										<option value="3">03</option>
+										<option value="4">04</option>
+										<option value="5">05</option>
+										<option value="6">06</option>	
+									</select>
+								</div>
+							</div>
+						</div>
+						<button class="btn btn-primary"><i class="fa fa-search"></i>Search now</button>	
+					</form>
+				</section>
+
+				<section id="section2 flights" class="packages flights">
+					<form class="package-form">
+						<div>
+							<label for="from"><h5>Flying from</h5></label>
+							<input id="from" type="text" placeholder=" City or airport">
+						</div>
+						<div>
+							<label for="to"><h5>Flying to</h5></label>
+							<input id="to" type="text" placeholder=" City or airport">
+						</div>						
+
+						<div>
+							<label for="departing"><h5>Departing</h5></label>
+							<input id="departing" type="date">
+						</div>
+
+						<div>
+							<label for="returning"><h5>Returning</h5></label>
+							<input id="returning" type="date">
+						</div>
+						<div class="drops">
+							<div class="search-dropdown">
+								<label for="adults"><h5>Adults</h5></label>	
+								<div class="adults">	
+									<select id="adults">
+										<option value="1">01</option>
+										<option value="2">02</option>
+										<option value="3">03</option>
+										<option value="4">04</option>
+										<option value="5">05</option>
+										<option value="6">06</option>	
+									</select>
+								</div>
+							</div>
+
+							<div class="search-dropdown">
+								<label for="kids"><h5>Kids</h5></label>
+								<div class="kids">
+									<select id="kids">
+										<option value="1">01</option>
+										<option value="2">02</option>
+										<option value="3">03</option>
+										<option value="4">04</option>
+										<option value="5">05</option>
+										<option value="6">06</option>			  			  
+									</select>
+								</div>	
+							</div>
+						</div>
+						<button class="btn btn-primary"><i class="fa fa-search"></i>Search now</button>	
+					</form>
+				</section>
+
+				<section id="section3 cars" class="packages cars">
+					<form class="package-form">
+						<div>
+							<label for="pickup"><h5>Pickup Location</h5></label>
+							<input id="pickup" type="text" placeholder=" City or airport">
+						</div>
+						<div>
+							<label for="pickup-date"><h5>Pickup Date</h5></label>
+							<input id="pickup-date" type="date">							
+						</div>					
+
+						<div>
+							<label for="pickup-time"><h5>Pickup Time</h5></label>
+							<input id="pickup-time" type="time">
+						</div>
+
+						<div>
+							<label for="return-date"><h5>Returning</h5></label>
+							<input id="return-date" type="date">
+						</div>
+						<div>
+							<label for="return-time"><h5>Return Time</h5></label>
+							<input id="return-time" type="time">
+						</div>
+						<button class="btn btn-primary"><i class="fa fa-search"></i>Search now</button>	
+					</form>			
+				</section>
+				<section id="section4 cruises" class="packages cruises">
+					<form class="package-form">
+						<div class="cruise-drops">
+							<div class="cruise-dropdown">
+								<label for="going-to"><h5>Going To</h5></label>	
+								<div class="cruise-to">	
+									<select id="cruise-to">
+										<option value="1">Show All</option>
+										<option value="1">Caribbean</option>
+										<option value="2">Bahamas</option>
+										<option value="3">Mexico</option>
+										<option value="4">Alaska</option>
+										<option value="5">Europe</option>
+										<option value="6">Bermuda</option>	
+										<option value="6">Hawaii</option>			
+									</select>
+								</div>
+							</div>
+
+							<div class="cruise-dropdown">
+								<label for="depart-month"><h5>Departure Month</h5></label>
+								<div class="depart-month">
+									<select id="depart-month">
+										<option value="1">Jan</option>
+										<option value="2">Feb</option>
+										<option value="3">Mar</option>
+										<option value="4">Apr</option>
+										<option value="5">May</option>
+										<option value="6">Jun</option>	
+										<option value="7">Jul</option>
+										<option value="8">Aug</option>
+										<option value="9">Sep</option>
+										<option value="10">Oct</option>
+										<option value="11">Nov</option>
+										<option value="12">Dec</option>												  			  
+									</select>
+								</div>	
+							</div>
+						</div>
+						<button class="btn btn-primary"><i class="fa fa-search"></i>Search now</button>	
+					</form>			
+				</section>
+				<section id="section5 activities" class="packages activities">
+					<form class="package-form activities-1">
+						<p class="soon">Coming soon!</p>
+					</form>					
+				</section>
+			</div>
+		</header>
+
+		<section class="best-tours">
+			<h2 class="section-head">The best sea tours</h2>
+			<p class="section-head">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, nesciunt, illo. Reiciendis.</p>
+
+			<div class="tours">
+				<div class="sea-tour">
+					<img src="images/tour-1.jpg" alt="">
+					<div class="tour-detail">
+						<div class="tour-title">				
+							<h3>Bolivia</h3>
+							<img src="images/five-star.png" alt="">
+							<h4>From $860</h4>
+						</div>
+						<div class="tour-text">
+							<div>
+								<p><img src="images/people.png" alt=""><span class="highlight"> 2</span> Adults, 1 Kid</p>
+								<p><img src="images/calendar.png" alt=""> July <span class="highlight">19th</span> to July <span class="highlight">26th</span></p>
+							</div>	
+							<button class="btn btn-secondary"><i class="fa fa-flag"></i>View More</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="sea-tour">
+					<img src="images/tour-2.jpg" alt="">
+					<div class="tour-detail">
+						<div class="tour-title">				
+							<h3>Patagonia</h3>
+							<img src="images/five-star.png" alt="">
+							<h4>From $750</h4>
+						</div>
+						<div class="tour-text">
+							<div>
+								<p><img src="images/people.png" alt=""><span class="highlight"> 2</span> Adults, 1 Kid</p>
+								<p><img src="images/calendar.png" alt=""> July <span class="highlight">19th</span> to July <span class="highlight">26th</span></p>	
+							</div>			
+							<button class="btn btn-secondary"><i class="fa fa-flag"></i>View More</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="sea-tour">
+					<img src="images/tour-3.jpg" alt="">
+					<div class="tour-detail">
+						<div class="tour-title">				
+							<h3>Torres del Paine</h3>
+							<img src="images/four-stars.png" alt="">
+							<h4>From $600</h4>
+						</div>
+						<div class="tour-text">
+							<div>
+								<p><img src="images/people.png" alt=""><span class="highlight"> 2</span> Adults, 1 Kid</p>
+								<p><img src="images/calendar.png" alt=""> July <span class="highlight">19th</span> to July <span class="highlight">26th</span></p>	
+							</div>			
+							<button class="btn btn-secondary"><i class="fa fa-flag"></i>View More</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="sea-tour">
+					<img src="images/tour-4.jpg" alt="">
+					<div class="tour-detail">
+						<div class="tour-title">				
+							<h3>Santorini</h3>
+							<img src="images/five-star.png" alt="">
+							<h4>From $1050</h4>
+						</div>
+						<div class="tour-text">
+							<div>
+								<p><img src="images/people.png" alt=""><span class="highlight"> 2</span> Adults, 1 Kid</p>
+								<p><img src="images/calendar.png" alt=""> July <span class="highlight">19th</span> to July <span class="highlight">26th</span></p>	
+							</div>				
+							<button class="btn btn-secondary"><i class="fa fa-flag"></i>View More</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="sea-tour">
+					<img src="images/tour-5.jpg" alt="">
+					<div class="tour-detail">
+						<div class="tour-title">				
+							<h3>Turkey</h3>
+							<img src="images/four-stars.png" alt="">
+							<h4>From $500</h4>
+						</div>
+						<div class="tour-text">
+							<div>
+								<p><img src="images/people.png" alt=""><span class="highlight"> 2</span> Adults, 1 Kid</p>
+								<p><img src="images/calendar.png" alt=""> July <span class="highlight">19th</span> to July <span class="highlight">26th</span></p>			
+							</div>	
+							<button class="btn btn-secondary"><i class="fa fa-flag"></i>View More</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="sea-tour">
+					<img src="images/tour-6.jpg" alt="">
+					<div class="tour-detail">
+						<div class="tour-title">				
+							<h3>China</h3>
+							<img src="images/five-star.png" alt="">
+							<h4>From $700</h4>
+						</div>
+						<div class="tour-text">
+							<div>
+								<p><img src="images/people.png" alt=""><span class="highlight"> 2</span> Adults, 1 Kid</p>
+								<p><img src="images/calendar.png" alt=""> July <span class="highlight">19th</span> to July <span class="highlight">26th</span></p>	
+							</div>			
+							<button class="btn btn-secondary"><i class="fa fa-flag"></i>View More</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="featured">
+			<h4>From $960</h4>
+			<img src="images/five-star.png" alt="">
+			<h2>Bavaria Vacation Packages</h2>
+			<p>July <span class="highlight">19th</span> to July <span class="highlight">26th</span></p>				
+		</section>
+
+		<section class="special-offers">
+			<h2 class="section-head">Special Offers</h2>
+			<p class="section-head">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, excepturi.</p>
+
+			<div class="offers">
+				<div class="offer">
+					<img src="images/greece.jpg" alt="">
+					<div class="offer-details">
+						<div class="offer-name">
+							<img src="images/five-star.png" alt="">
+							<h3>Greece</h3>
+						</div>
+						<div class="offer-text">
+							<ul>
+								<li><span class="offer-num">35</span><span class="offer-tag"> Tours</span></li>
+								<li><span class="offer-num">24</span><span class="offer-tag"> Cities</span></li>
+								<li><span class="offer-num">50</span><span class="offer-tag"> Hotels</span></li>
+							</ul>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum libero facilis totam.</p>
+							<button class="btn btn-secondary">View More</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="offer">
+					<img src="images/china.jpg" alt="">
+					<div class="offer-details">
+						<div class="offer-name">
+							<img src="images/five-star.png" alt="">
+							<h3>China</h3>
+						</div>
+
+						<div class="offer-text">
+							<ul>
+								<li><span class="offer-num">58</span><span class="offer-tag"> Tours</span></li>
+								<li><span class="offer-num">49</span><span class="offer-tag"> Cities</span></li>
+								<li><span class="offer-num">90</span><span class="offer-tag"> Hotels</span></li>
+							</ul>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum libero facilis totam.</p>
+							<button class="btn btn-secondary">View More</button>
+						</div>	
+					</div>						
+				</div>
+
+				<div class="offer">
+					<img src="images/canada.jpg" alt="Canada">
+					<div class="offer-details">
+						<div class="offer-name">
+							<img src="images/five-star.png" alt="">
+							<h3>Canada</h3>
+						</div>
+						<div class="offer-text">				
+							<ul>
+								<li><span class="offer-num">88</span><span class="offer-tag"> Tours</span></li>
+								<li><span class="offer-num">10</span><span class="offer-tag"> Cities</span></li>
+								<li><span class="offer-num">110</span><span class="offer-tag"> Hotels</span></li>
+							</ul>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum libero facilis totam.</p>
+							<button class="btn btn-secondary">View More</button>	
+						</div>	
+					</div>	
+				</div>
+			</div>
+		</section>
+
+		<section class="popular-countries">
+			<h2 class="section-head">Most Popular Travel Countries</h2>
+			<p class="section-head">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, excepturi.</p>
+			<div class="popular-row1">
+				<div class="popular-images1">
+					<div class="pop-city">
+						<img src="images/italy-small.jpg" alt="">
+						<div class="pop-city-text">
+							<h4>Beautiful City</h4>
+							<h5><span>From $250</span> per person</h5>
+						</div>
+					</div>
+
+					<div class="pop-city">
+						<img src="images/italy-small2.jpg" alt="">
+						<div class="pop-city-text">
+							<h4>Beautiful City</h4>
+							<h5><span>From $250</span> per person</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="popular-images2">	
+					<div class="pop-city">
+						<img src="images/italy-small3.jpg" alt="">
+						<div class="pop-city-text">
+							<h4>Beautiful City</h4>
+							<h5><apan>From $250</apan> per person</h5>
+						</div>
+					</div>
+
+					<div class="pop-city">
+						<img src="images/italy-small4.jpg" alt="">
+						<div class="pop-city-text">
+							<h4>Beautiful City</h4>
+							<h5><span>From $250</span> per person</h5>
+						</div>
+					</div>		
+				</div>
+
+				<div class="popular-detail">
+					<div class="">
+						<h3>Italy, Europe</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex deleniti enim quisquam iure atque nulla, accusamus eum nemo. Aperiam quae doloribus eos, vitae mollitia, illum laboriosam blanditiis ab repudiandae ipsum.</p>
+						<div class="clearfix">
+							<h4>Best Cities</h4>
+							<div class="best-cities">
+								<ul>
+									<li>Rome</li>
+									<li>Venice</li>
+									<li>Pisa</li>
+									<li>Naples</li>
+								</ul>
+							</div>
+							<div class="best-cities">
+								<ul>
+									<li>Bologna</li>
+									<li>Florence</li>
+									<li>Genoa</li>
+									<li>Turin</li>
+								</ul>						
+							</div>
+							<div class="best-cities">
+								<ul>
+									<li>Milan</li>
+									<li>Capri</li>
+									<li>Matera</li>
+									<li>Pompeii</li>
+								</ul>						
+							</div>
+						</div>
+						<button class="btn btn-secondary"><i class="fa fa-flag"></i>View all places</button>
+					</div>
+				</div>	
+			</div>
+
+			<div class="popular-row2">
+				<div class="popular-images1">
+					<div class="pop-city">
+						<img src="images/francesmall1.jpg" alt="">
+						<div class="pop-city-text">
+							<h4>Beautiful City</h4>
+							<h5><span>From $250</span> per person</h5>
+						</div>
+					</div>
+
+					<div class="pop-city">
+						<img src="images/francesmall2.jpg" alt="">
+						<div class="pop-city-text">
+							<h4>Beautiful City</h4>
+							<h5><span>From $250</span> per person</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="popular-images2">	
+					<div class="pop-city">
+						<img src="images/francesmall3.jpg" alt="">
+						<div class="pop-city-text">
+							<h4>Beautiful City</h4>
+							<h5><span>From $250</span> per person</h5>
+						</div>
+					</div>
+
+					<div class="pop-city">
+						<img src="images/francesmall4.jpg" alt="">
+						<div class="pop-city-text">
+							<h4>Beautiful City</h4>
+							<h5><span>From $250</span> per person</h5>
+						</div>
+					</div>		
+				</div>
+
+				<div class="popular-detail">
+					<div>
+						<h3>France, Europe</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex deleniti enim quisquam iure atque nulla, accusamus eum nemo. Aperiam quae doloribus eos, vitae mollitia, illum laboriosam blanditiis ab repudiandae ipsum.</p>
+						<div class="clearfix">
+							<h4>Best Cities</h4>
+							<div class="best-cities">
+								<ul>
+									<li>Rome</li>
+									<li>Venice</li>
+									<li>Pisa</li>
+									<li>Naples</li>
+								</ul>
+							</div>
+							<div class="best-cities">
+								<ul>
+									<li>Bologna</li>
+									<li>Florence</li>
+									<li>Genoa</li>
+									<li>Turin</li>
+								</ul>						
+							</div>
+							<div class="best-cities">
+								<ul>
+									<li>Milan</li>
+									<li>Capri</li>
+									<li>Matera</li>
+									<li>Pompeii</li>
+								</ul>						
+							</div>
+						</div>
+						<button class="btn btn-secondary"><i class="fa fa-flag"></i>View all places</button>
+					</div>
+				</div>				
+			</div>		
+		</section>
+
+		<footer>
+			<div class="footer-info clearfix">	
+				<div class="logo info">
+					<h3>Let's <apan><img src="images/logo.png" alt="Let's Travel logo">	</apan>Travel</h3>
+				</div>	
+				<div class="info">
+					<h5>Best Tours</h5>
+					<ul>
+						<li><a href="#">Camping Holidays</a></li>
+						<li><a href="#">self-catering Holidays</a></li>
+						<li><a href="#">Safaris and wildlife</a></li>
+						<li><a href="#">Activity and adventure</a></li></a>
+						<li><a href="#">Food and wine holidays</a></li>
+					</ul>
+				</div>
+
+				<div class="info footer-countries">
+					<h5>Popular countries</h5>
+					<ul>
+						<li><a href="#">France</a></li>
+						<li><a href="#">Spain</a></li>
+						<li><a href="#">Turkey</a></li>
+						<li><a href="#">India</a></li>
+						<li><a href="#">Bolivia</a></li>
+						<li><a href="#">Denmark</a></li>
+						<li><a href="#">South Africa</a></li>
+						<li><a href="#">Peru</a></li>
+						<li><a href="#">China</a></li>
+						<li><a href="#">Japan</a></li>
+					</ul>
+				</div>
+				<div class="info">
+					<h5>Follow Us</h5>
+					<div>
+						<button  class="social facebook"><i class="fa fa-facebook"></i> facebook
+							<div class="fans">150</div>
+						</button>
+					</div>
+					<div>
+						<button  class="social twitter"><i class="fa fa-twitter"></i> twitter
+							<div class="fans">78</div>
+						</button>
+					</div>
+					<div>
+						<button  class="social google"><i class="fa fa-google-plus"></i> google+
+							<div class="fans">590</div>
+						</button>
+					</div>
+					<div>
+						<button class="social pinterest"><i class="fa fa-pinterest-p"></i> pinterest
+							<div class="fans">1650</div>
+						</button>
+					</div>
+				</div>
+				<div class="info">
+					<h5>Subscribe</h5>
+					<div class="newsletter">
+						<input type="email" placeholder="Your email">
+						<i class="fa fa-envelope-o"></i>
+					</div>
+					<input type="submit" value="Submit" class="btn">
+				</div>	
+			</div>
+			<nav>
+				<ul class="footer-menu">
+					<li>
+						<a href="#"><h5>Privacy Policy</h5></a>
+					</li>
+					<li>
+						<a href="#"><h5>About Us</h5></a>
+					</li>
+					<li>
+						<a href="#"><h5>Support</h5></a>
+					</li>
+					<li>
+						<a href="#"><h5>FAQ</h5></a>
+					</li>
+					<li>
+						<a href="#"><h5>Blog</h5></a>
+					</li>
+					<li>
+						<a href="#"><h5>Forum</h5></a>
+					</li>
+				</ul>
+				<div class="copy">
+					<p>&copy 2015 All rights reserved. <span class="bottom">Let's Travel</span></p>
+				</div>
+			</nav>
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+		<script>
+
+			$(function() {
+				$.simpleWeather({
+					location: 'London, UK',
+					woeid: '',
+					unit: 'c',
+					success: function(weather) {
+						html = '<h3>'+weather.city+' '+'<i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h3>';
+
+						$("#weather").html(html);
+					},
+					error: function(error) {
+						$("#weather").html('<p>'+error+'</p>');
+					}
+				});
+
+				$('.fa-2x').on('click', function(){
+
+					$('.menu').toggleClass('show');
+					$('.fa-2x').toggleClass('fa-bars');
+					$('.fa-2x').toggleClass('fa-close');
+				}); 
+
+				$('.search label').on('click', function() {
+					var $selection = $(this).data().selection;
+					$('.packages').hide();
+
+					$('.' + $selection).show();
+				});
+
+
+			});	
+
+		</script>	
+	</body>
+	</html>
+
+
+
+
+
+
+
+
+
